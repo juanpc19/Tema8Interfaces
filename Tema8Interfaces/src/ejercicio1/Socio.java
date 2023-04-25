@@ -25,4 +25,19 @@ public class Socio implements Comparable {
 		return "Socio id: " + id + ", nombre: " + nombre + ", edad: " + edad;
 	}
 
+	@Override
+	public int compareTo(Object o) {
+		int resultado = 0;
+		
+		Socio socio = (Socio) o;
+		
+		if (this.id < socio.id) {
+			resultado = -1;
+
+		} else if (this.id > socio.id) {
+			resultado = 1;
+		}
+		return resultado;
+	}
+
 }
