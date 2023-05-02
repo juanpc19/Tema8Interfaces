@@ -4,37 +4,30 @@ import java.util.Scanner;
 
 public class Main {
 
-	//
-	//
-	//
 	public static void main(String[] args) {
 
 		Polideportivo poli[] = new Polideportivo[5];
 
-		Polideportivo poli2 = new Polideportivo(20.4, "nooooooo");
+		EdificioOficinas EdiOfi[] = new EdificioOficinas[2];
 
-		Scanner dogma = new Scanner(System.in);
+		poli[0] = new Polideportivo("Tenis", 50.0);
+		poli[1] = new Polideportivo("Futbol", 100.0);
+		poli[2] = new Polideportivo("Baloncesto", 70.0);
+		poli[3] = new Polideportivo("Karate", 50.0);
+		poli[4] = new Polideportivo("Judo", 60.0);
 
-		double cosa;
-
-		//superficie en edificio oficina y switch en tipo interfaces vacias 
-		
-		poli[0] = new Polideportivo(10.5, "siu");
-		poli[1] = new Polideportivo(20.4, "nooooooo");
-		poli[2] = new Polideportivo(30.1, "reeee");
-		poli[3] = new EdificioOficinas(10);
-		poli[4] = new EdificioOficinas(20);
-
-		System.out.println(poli2.getSuperficieEdificio(poli2));
-		System.out.println(poli[0].getClass().getName());
-		System.out.println(poli[3].getClass());
-		System.out.println(poli[4].getNombre());
+		EdiOfi[0] = new EdificioOficinas(10, 100.0);
+		EdiOfi[1] = new EdificioOficinas(20, 200.0);
 
 		for (Polideportivo p : poli) {
 
 		}
+		
+		for (EdificioOficinas e : EdiOfi) {
 
-		dogma.close();
+		}
+
+
 	}
 
 }

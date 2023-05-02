@@ -2,14 +2,17 @@ package ejercicio3;
 
 public class EdificioOficinas implements Edificio {
 
-	// hereda superficie de polideportivo por lo que usa interfaz edificio para
-	// superficie
-	// implementa InstalacionDeportiva para saber si es Polideportivo o
-	// edificioOficinas
+	private int numOficinas;
 
-	protected int numOficinas;
+	private double superficie;
 
 	public EdificioOficinas() {
+
+	}
+
+	public EdificioOficinas(int numOficinas, double superficie) {
+		this.numOficinas = numOficinas;
+		this.superficie = superficie;
 	}
 
 	public int getNumOficinas() {
@@ -20,8 +23,8 @@ public class EdificioOficinas implements Edificio {
 		this.numOficinas = numOficinas;
 	}
 
-	public void getSuperficieEdificio() {
-
+	public double getSuperficieEdificio() {
+		return superficie;
 	}
 
 }

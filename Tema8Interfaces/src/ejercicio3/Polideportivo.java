@@ -2,34 +2,55 @@ package ejercicio3;
 
 public class Polideportivo implements Edificio, InstalacionDeportiva {
 
-	// tiene superficie por lo que usa interfaz edificio para superficie
-	// implementa InstalacionDeportiva para saber si es Polideportivo o
-	// edificioOficinas
+	private String nombre;
 
-	protected double superficie;
-
-	protected String nombre = "";
+	private double superficie;
 
 	public Polideportivo() {
 
 	}
 
-	public Polideportivo(double superficie, String nombre) {
+	public Polideportivo(String nombre, double superficie) {
 		this.superficie = superficie;
 		this.nombre = nombre;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public double getSuperficieEdificio() {
+		return superficie;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public int getTipoDeInstalacion() {
+		int resultado = 0;
+
+		switch (nombre) {
+
+		case "Tenis" -> {
+			resultado = 1;
+		}
+
+		case "Futbol" -> {
+			resultado = 2;
+		}
+
+		case "Baloncesto" -> {
+			resultado = 3;
+		}
+
+		case "Karate" -> {
+			resultado = 4;
+		}
+
+		case "Judo" -> {
+			resultado = 5;
+		}
+
+		default -> {
+			System.err.println("error");
+		}
+
+		}
+
+		return resultado;
 	}
 
-	public void getSuperficieEdificio() {
-
-	}
-	
-	
 }
