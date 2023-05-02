@@ -4,11 +4,11 @@ public interface Edificio {
 
 	double superficie = 0.0;
 
-	default double getSuperficieEdificio(Polideportivo poli) {
+	default double getSuperficieEdificio() {
 
 		double superficie = 0;
 
-		superficie = poli.superficie;
+	
 
 		return superficie;
 	}

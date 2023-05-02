@@ -1,6 +1,6 @@
 package ejercicio3;
 
-public class EdificioOficinas extends Polideportivo implements Edificio, InstalacionDeportiva {
+public class EdificioOficinas implements Edificio {
 
 	// hereda superficie de polideportivo por lo que usa interfaz edificio para
 	// superficie
@@ -10,18 +10,6 @@ public class EdificioOficinas extends Polideportivo implements Edificio, Instala
 	protected int numOficinas;
 
 	public EdificioOficinas() {
-		super();
-
-	}
-
-	public EdificioOficinas(double superficie, String nombre) {
-		super(superficie, nombre);
-
-	}
-
-	public EdificioOficinas(double superficie, String nombre, int numOficinas) {
-		super(superficie, nombre);
-		this.numOficinas = numOficinas;
 	}
 
 	public int getNumOficinas() {

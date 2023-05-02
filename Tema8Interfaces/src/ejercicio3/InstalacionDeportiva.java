@@ -2,13 +2,8 @@ package ejercicio3;
 
 public interface InstalacionDeportiva {
 
-	default String getTipoDeInstalacion(Polideportivo poli) {
+	default int getTipoDeInstalacion() {
 
-		String tipo = "";
-
-		tipo = poli.getClass().getName();
-
-		return tipo;
 	}
 
 }

@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
+	//
+	//
+	//
 	public static void main(String[] args) {
 
 		Polideportivo poli[] = new Polideportivo[5];
@@ -14,11 +17,13 @@ public class Main {
 
 		double cosa;
 
+		//superficie en edificio oficina y switch en tipo interfaces vacias 
+		
 		poli[0] = new Polideportivo(10.5, "siu");
 		poli[1] = new Polideportivo(20.4, "nooooooo");
 		poli[2] = new Polideportivo(30.1, "reeee");
-		poli[3] = new EdificioOficinas(40.2, "no tiene oficinas");
-		poli[4] = new EdificioOficinas(50.2, "tiene oficinas", 20);
+		poli[3] = new EdificioOficinas(10);
+		poli[4] = new EdificioOficinas(20);
 
 		System.out.println(poli2.getSuperficieEdificio(poli2));
 		System.out.println(poli[0].getClass().getName());

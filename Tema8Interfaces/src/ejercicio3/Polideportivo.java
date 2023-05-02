@@ -30,4 +30,6 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 	public void getSuperficieEdificio() {
 
 	}
+	
+	
 }
