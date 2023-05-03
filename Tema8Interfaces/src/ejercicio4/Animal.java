@@ -2,14 +2,16 @@ package ejercicio4;
 
 public interface Animal {
 
-	void comer();
+	default void comer() {
+		System.out.println("ñam, ñam.");
+	}
 	
-	void dormir();
+	default void dormir() {
+		System.out.println("zzzz, zzzz.");
+	}
 	
-	void hacerRuido();
-	
-	
-	
-	
+	default void hacerRuido() {
+		System.out.println("Reeeeeeeeeeeeeeeeeeee.");
+	}
 	
 }

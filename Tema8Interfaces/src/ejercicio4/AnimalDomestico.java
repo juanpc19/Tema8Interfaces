@@ -2,14 +2,14 @@ package ejercicio4;
 
 public class AnimalDomestico implements Animal {
 
-	String nombre;
+	protected String nombre;
 
-	String raza;
+	protected String raza;
 
-	double peso;
+	protected double peso;
 
-	String color;
-	
+	protected String color;
+
 	public AnimalDomestico() {
 	}
 
@@ -20,31 +20,19 @@ public class AnimalDomestico implements Animal {
 		this.color = color;
 	}
 
-
-	void vacunar() {
-
+	public void vacunar() {
+		System.out.println("Pinchazo administrado.");
 	}
 
-	void hacerCaso() {
+	public boolean hacerCaso() {
+		boolean resultado = true;
 
+		return resultado;
 	}
-
-	@Override
-	public void comer() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void dormir() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void hacerRuido() {
-		// TODO Auto-generated method stub
-
+	
+	public String toString() {
+		String resultado = "nombre: " + nombre + ", raza: " + raza + ", peso: " + peso + ", color: " + color;
+		return resultado;
 	}
 
 }
