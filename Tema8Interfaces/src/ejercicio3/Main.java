@@ -1,7 +1,5 @@
 package ejercicio3;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -20,13 +18,18 @@ public class Main {
 		EdiOfi[1] = new EdificioOficinas(20, 200.0);
 
 		for (Polideportivo p : poli) {
+			System.out.println("Tipo de instalacion: " + p.getTipoDeInstalacion());
 
+			System.out.println("Superficie edificio: " + p.getSuperficieEdificio());
 		}
 		
+		System.out.println();
+
 		for (EdificioOficinas e : EdiOfi) {
+			System.out.println("Numero de oficinas: " + e.getNumOficinas());
 
+			System.out.println("Superficie edificio: " + e.getSuperficieEdificio());
 		}
-
 
 	}
 

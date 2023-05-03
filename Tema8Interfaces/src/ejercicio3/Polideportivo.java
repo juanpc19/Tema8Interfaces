@@ -15,10 +15,12 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 		this.nombre = nombre;
 	}
 
+	@Override
 	public double getSuperficieEdificio() {
 		return superficie;
 	}
 
+	@Override
 	public int getTipoDeInstalacion() {
 		int resultado = 0;
 
@@ -45,7 +47,7 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 		}
 
 		default -> {
-			System.err.println("error");
+			System.err.println("El tipo de instalacion no es valido: ");
 		}
 
 		}

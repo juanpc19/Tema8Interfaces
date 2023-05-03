@@ -23,6 +23,7 @@ public class EdificioOficinas implements Edificio {
 		this.numOficinas = numOficinas;
 	}
 
+	@Override
 	public double getSuperficieEdificio() {
 		return superficie;
 	}
