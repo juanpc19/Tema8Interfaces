@@ -1,5 +1,12 @@
 package ejercicio4;
 
+/**
+ * clase Gato que heredara metodos de AnimalDomestico y añadira el metodo
+ * toserBolaDePelo ademas de implentar la interfaz Animal
+ * 
+ * @author juanpesca19
+ *
+ */
 public class Gato extends AnimalDomestico implements Animal {
 
 	/**

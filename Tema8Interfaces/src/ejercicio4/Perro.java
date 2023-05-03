@@ -1,5 +1,12 @@
 package ejercicio4;
 
+/**
+ * clase Perro que heredara metodos de AnimalDomestico y añadira el metodo
+ * sacarPaseo ademas de implentar la interfaz Animal
+ * 
+ * @author juanpesca19
+ *
+ */
 public class Perro extends AnimalDomestico implements Animal {
 
 	/**

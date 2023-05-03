@@ -32,10 +32,12 @@ public class AnimalDomestico implements Animal {
 	 * @param color  contendra valor para atributo color
 	 */
 	public AnimalDomestico(String nombre, String raza, double peso, String color) {
-		this.nombre = nombre;
-		this.raza = raza;
-		this.peso = peso;
-		this.color = color;
+		if (peso >= 0.0) {
+			this.nombre = nombre;
+			this.raza = raza;
+			this.peso = peso;
+			this.color = color;
+		}
 	}
 
 	/**
